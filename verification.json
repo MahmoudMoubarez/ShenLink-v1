@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "cleanup": "PASS",
+  "source_commit": "9416900f9d46ba68fb101beeae76b110e208c36e",
+  "checkpoint_commit": "d14b72ecdbe2e9f1130f7791d6aca8f262a7d616",
+  "installed_package_verified": true,
+  "standalone_smoke_tests_passed": 5,
+  "commands_delivered": 280,
+  "sensors_delivered": 700,
+  "video_fresh_frames": 413,
+  "scope": "Rootless native video + commands + sensors, shared A/C/B relay packet blackholes",
+  "limitations": [
+    "No bandwidth shaping or different route RTT; not the privileged three-path emulator",
+    "UDP packet blackhole, not interface-down, socket failure or SSH/network reconfiguration",
+    "Synthetic native video, not hardware camera or screen/glass-to-glass timing",
+    "Command receipt is acceptance, not actuator execution or crash-persistent exactly-once",
+    "Same Pi/process clock; test-relay/logging overhead included in observed timings",
+    "One short functional run, no CPU/RSS benchmark or SRT/DDS superiority claim"
+  ]
+}

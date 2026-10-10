@@ -1,0 +1,60 @@
+{
+  "source_commit": "9416900f9d46ba68fb101beeae76b110e208c36e",
+  "entry_points": [
+    "multiflow_comm.v1",
+    "video_stream.v1"
+  ],
+  "module_count": 41,
+  "package_init_overrides": [
+    "multiflow_comm",
+    "video_stream",
+    "video_stream.live"
+  ],
+  "hashes": {
+    "src/multiflow_comm/__init__.py": "1fb7e2b7d4570f9efcee9ae17cf71570bf25ab9a2be78b35c7e8ae733986a00b",
+    "src/multiflow_comm/byte_tcp.py": "4ad5a781ccb1238fe6ebcdb82bc0586be6b6329fe7955a225dd599d74470a9e5",
+    "src/multiflow_comm/byte_transport.py": "fdd507f8ac759e30f0919c696264ea66f439edf529ad7d95e93988ce012be852",
+    "src/multiflow_comm/byte_udp.py": "f02fe26150fcebe5794907a3ed6d6a18252b297d508ca2a36b42b9c660faf8fa",
+    "src/multiflow_comm/command_endpoints.py": "cacd0365403787448c6ab717ccc61bc7d217c6d2574e76aa2046bdc76c262691",
+    "src/multiflow_comm/messages.py": "1e3a457ef6917d177a07de23e4e92a55e767c9d53bde486f25abf133eaade9cf",
+    "src/multiflow_comm/qos.py": "475696b02c63d95bbc0fff1ec256f65a3d3871b1b5a4c87fa276165695c87cae",
+    "src/multiflow_comm/scheduler.py": "8075a507847dd5d0d64d12031d3b3f272975090de48a57818707afc75a89dd45",
+    "src/multiflow_comm/sensor_endpoints.py": "f6eb4d6b5a987b443968a1fdae88fb2c04c19d3a2a824f7cd840568eae7eb7ee",
+    "src/multiflow_comm/telemetry.py": "1a0209d6db8e9c62898d54e69fb650a2a83a7e8f5314d5d8aabbdce73baa57f0",
+    "src/multiflow_comm/transport.py": "5928a4cf2b7b406cf3583618244ce24cd734c34e4daace18370eebd93df07d7b",
+    "src/multiflow_comm/types.py": "b3bcf451952014cc43eec2c0a8be3d595aec140692af10fda9080253d86c3ed1",
+    "src/multiflow_comm/v1.py": "210774cf5373b1479c39a6e82ba33c109b41da1fe8e70819e2ee539095f425a4",
+    "src/multiflow_comm/wire.py": "730cd48532617d01dd4b5f9a67bd9d1de26671ace8fe82db159017a287690603",
+    "src/video_stream/__init__.py": "92121d8addd2543603ea4967543e63d178a484261dd585e16bfc7bc706374e1e",
+    "src/video_stream/adapters/tcp_transport.py": "dbf6287e43476f9af40c39d4e9fe618f8054a63e64f172986c16e6bc6cd9cf36",
+    "src/video_stream/adapters/udp_transport.py": "447fbc341e9c9953093fd6ac070e5eba0259f9dc264ddd661165a7a1f9224ccb",
+    "src/video_stream/clock_mapping.py": "c61bc9738b4e5768f49cb9d3cad7ccda81356288e73426797b3556440381b674",
+    "src/video_stream/configuration.py": "ad479a595c2c2a34bcf0600cb996326a837e7d477cd3573729b416bf0c36f7ca",
+    "src/video_stream/contracts/__init__.py": "ea1a2d4daaf3e523265882e23de76b2d5181848c1be8def44dbc2a27b271b11c",
+    "src/video_stream/contracts/base.py": "a84f1d85c99fc92f9d879622715601b95a5570367deb49460474a8ba6fa82704",
+    "src/video_stream/contracts/session.py": "f0d42743eaa26acc83d0ca9b65cc48c2e5378340c8c50d337dbe2f968ea64fed",
+    "src/video_stream/contracts/types.py": "9abe0b135649a5c7072d8d3941215ed0c68d30819346a7fa05f28784535793a8",
+    "src/video_stream/endpoints.py": "a405e6237ea575a6b16fa317a86fec408851f718cce4846a4d016c2c8d9081ce",
+    "src/video_stream/live/__init__.py": "10410463e4e3d157a54de618351593a7cf0e578d706cd61aba62c77b648564e4",
+    "src/video_stream/live/sources.py": "3aab3855fc45e433bac83e403b031c3b021fa7c56b9696f25b7eca8101f7b927",
+    "src/video_stream/live/types.py": "417e4bb44572c83e22f3dd7eeb22ffb3cd9996abaeb2cf5a316a87d353e04b54",
+    "src/video_stream/shared/__init__.py": "cf8b8f3c6b08525adcd348d08d8239edf4fdf79c3fe80d0e65137ba9909141ec",
+    "src/video_stream/shared/adaptive.py": "b4ab3e4eb1679ae03014a4d531cac15779c2c939d483f5ba91c20bea02354a4b",
+    "src/video_stream/shared/core.py": "5643571347f151626e7ad08b4f3d85a6506107f9aa35711da9d344292b794169",
+    "src/video_stream/shared/delivery.py": "0fbf779b04f4c507444b3bb3e47b155b74ce32ce4cd218dc58c7a1128fb6488c",
+    "src/video_stream/shared/dual.py": "5c997ead595631695a95f6fceb9adb8ebfd7aef9ab4366381baa78ca270dab84",
+    "src/video_stream/shared/fps.py": "7f025320dd54b455a115c527329ad447ebe05091c143ef7cae78d5881be2074f",
+    "src/video_stream/shared/ladder.py": "969d6076c1f922ed455b26d28167d28d5cc26b5a4a07d43df89d5b539c0e8f80",
+    "src/video_stream/shared/negotiation.py": "b7921a83a2a13223405a726b5b064fde6259b3ab5a3cbbed7615ec3d63ba1b87",
+    "src/video_stream/shared/ordered.py": "2f14bb36a584147023250fe0f4c795be88ab80a734ae1b71b2653b43e8ad5ae5",
+    "src/video_stream/shared/session.py": "3075e872f5284e45a4c97e9bb9856f4e8225fdbf92a833005528d8194ab69742",
+    "src/video_stream/shared/transport_path.py": "fe72a16af18a627678bc6fd011d5dfd8a554ff3d3bd771087291765d4891ab07",
+    "src/video_stream/shared/udp.py": "87f6b2d6fe29f021a17f67467fced741e2a222f0651a561efda8f579ac4ffec6",
+    "src/video_stream/transport.py": "32ae184041ebd39869a3ddbf81d14099bf96a15e9c1db8cee035c34168a95e00",
+    "src/video_stream/v1/__init__.py": "bae79c4982ec0aab80140abcd2aa30526848c9cdff4ffc7c1ba92d0133bc7554"
+  },
+  "limitations": [
+    "License choice pending before public publishing",
+    "Native video runtime is an OS dependency"
+  ]
+}
