@@ -1,11 +1,25 @@
-# Multiflow v1 — release candidate
+# ShenLink v1 — release candidate
 
 Independent source project extracted from the verified Linux implementation.
-Install with `python -m pip install .`. Public APIs:
+Install with `python -m pip install .`. The distribution name is `ShenLink`.
+Canonical public APIs:
 
-- `video_stream.v1`: VideoSender/VideoReceiver; adaptive quality and FPS.
-- `multiflow_comm.v1`: CommandSender/CommandReceiver; SensorSender/SensorReceiver.
+- `shenlink.v1.video`: VideoSender/VideoReceiver; adaptive quality and FPS.
+- `shenlink.v1`: CommandSender/CommandReceiver; SensorSender/SensorReceiver.
 - Shared opaque TransportAdapter contract and UDP/TCP implementations.
+
+```python
+from shenlink.v1 import CommandSender, SensorReceiver, UdpTransport
+from shenlink.v1.video import VideoSender, VideoReceiver
+```
+
+The legacy `multiflow_comm.v1` and `video_stream.v1` imports remain supported
+and reference the exact same classes. Existing demos need no import migration.
+This branding change does not modify wire formats, delivery logic or timings.
+The folder name and historical extraction manifest are retained for provenance.
+When migrating an environment installed under the old `multiflow-v1` distribution
+name, uninstall that distribution before installing ShenLink; both distributions
+own the same compatibility modules and should not be installed side by side.
 
 Each endpoint owns separate adapter instances. UDP/TCP defaults are not encrypted
 or authenticated; use a trusted network or implement a secure adapter. Command

@@ -1,5 +1,9 @@
 # Commands v1: phase-two API and adapter alignment
 
+ShenLink canonical imports: `shenlink.v1` for commands/sensors and
+`shenlink.v1.video` for video. The legacy imports below remain compatible and
+reference identical classes; see the root README for the current distribution name.
+
 ## Public surface
 
 Use `multiflow_comm.v1` for the simple command API. Video remains

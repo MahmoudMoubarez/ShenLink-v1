@@ -26,7 +26,10 @@ def test_same_adapter_contract_for_video_commands_sensors():
 
 @pytest.mark.parametrize("transport", ["udp", "tcp"])
 @pytest.mark.parametrize("flow", ["commands", "sensors"])
-def test_standalone_native_bytes_endpoints(flow, transport):
+@pytest.mark.parametrize("namespace", ["multiflow_comm.v1", "shenlink.v1"])
+def test_standalone_native_bytes_endpoints(flow, transport, namespace):
+    import importlib
+    api = importlib.import_module(namespace)
     kind = socket.SOCK_DGRAM if transport == "udp" else socket.SOCK_STREAM
     reservations = [socket.socket(socket.AF_INET, kind) for _ in range(2)]
     try:
@@ -35,16 +38,16 @@ def test_standalone_native_bytes_endpoints(flow, transport):
     finally:
         for sock in reservations: sock.close()
     if transport == "udp":
-        tx, rx = UdpTransport("a", a, b), UdpTransport("a", b, a)
+        tx, rx = api.UdpTransport("a", a, b), api.UdpTransport("a", b, a)
     else:
-        tx, rx = TcpTransport("a", a, b), TcpTransport("a", b, a, mode="listen")
+        tx, rx = api.TcpTransport("a", a, b), api.TcpTransport("a", b, a, mode="listen")
     received = []
     if flow == "commands":
-        sender = CommandSender(CommandSenderSettings([tx]))
-        receiver = CommandReceiver(CommandReceiverSettings([rx]), on_command=received.append)
+        sender = api.CommandSender(api.CommandSenderSettings([tx]))
+        receiver = api.CommandReceiver(api.CommandReceiverSettings([rx]), on_command=received.append)
     else:
-        sender = SensorSender(SensorSenderSettings([tx]))
-        receiver = SensorReceiver(SensorReceiverSettings([rx]), on_observation=received.append)
+        sender = api.SensorSender(api.SensorSenderSettings([tx]))
+        receiver = api.SensorReceiver(api.SensorReceiverSettings([rx]), on_observation=received.append)
         receiver.register_measurement("robot", "value", MeasurementExpectation("raw", 1, codec_id="raw"))
     try:
         receiver.start(); sender.start()

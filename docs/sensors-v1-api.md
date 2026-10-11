@@ -1,5 +1,8 @@
 # Sensor endpoints v1
 
+ShenLink canonical import: `shenlink.v1`. The legacy imports below remain
+compatible and reference the exact same implementations.
+
 `multiflow_comm.v1` exports SensorSender / SensorReceiver, frozen settings and
 the existing TelemetrySample, MeasurementExpectation and FreshnessPolicy types.
 Video, commands and sensors use the identical TransportAdapter contract and

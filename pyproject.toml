@@ -3,9 +3,9 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "multiflow-v1"
+name = "ShenLink"
 version = "0.1.0rc1"
-description = "Multipath adaptive video, ordered commands and latest sensor readings"
+description = "ShenLink: multipath adaptive video, ordered commands and latest sensor readings"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = ["pillow>=9"]
@@ -15,4 +15,4 @@ test = ["pytest>=7"]
 
 [tool.setuptools.packages.find]
 where = ["src"]
-include = ["multiflow_comm*", "video_stream*"]
+include = ["shenlink*", "multiflow_comm*", "video_stream*"]
