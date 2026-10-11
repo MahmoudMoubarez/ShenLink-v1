@@ -1,0 +1,13 @@
+run_id,candidate,repetition,phase,latest_capture_lag_time_mean_ms
+c548c522,adaptive-frame-rate-first,1,initial,27.139464366884912
+c548c522,adaptive-frame-rate-first,2,initial,27.46419396520214
+c548c522,adaptive-frame-rate-first,1,degraded_a,33.15241523080378
+c548c522,adaptive-frame-rate-first,2,degraded_a,33.91213082914079
+c548c522,adaptive-frame-rate-first,1,all_restored,40.56676134227578
+c548c522,adaptive-frame-rate-first,2,all_restored,52.145066003896275
+c548c522,srt-high,1,initial,154.52057790408907
+c548c522,srt-high,2,initial,154.91889627291937
+c548c522,srt-high,1,degraded_a,158.39198075382075
+c548c522,srt-high,2,degraded_a,158.7263224832486
+c548c522,srt-high,1,all_restored,177.39719582654402
+c548c522,srt-high,2,all_restored,1409.5897292664665

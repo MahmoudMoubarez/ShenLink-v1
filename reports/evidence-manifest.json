@@ -1,0 +1,13 @@
+{
+  "report_date": "2026-10-11",
+  "experiment_date": "2026-10-08",
+  "scope": "Historical lab measurements; not a rerun of current GUI or current SDK.",
+  "files": {
+    "c548c522-adaptive-video-summary.json": "8a983e4e04c223ade22d0268eeef0b5a2f93a1d4614aa2b2f5cef0972e130263",
+    "c548c522-latest-frame-summary.json": "de9710048163d47b62f949884d1cc3cda7024d1f673bd49297addc78ca9d224b",
+    "c548c523-adaptive-video-summary.json": "91095f323e57bddcffa3d3beac14cfdd3e7d39c84d98d62adff251901280c999",
+    "c548c523-latest-frame-summary.json": "231026e8140ac698251f354577723d8b192aa995434b3af283c90a58c6e3ac6e"
+  },
+  "archive_sha256": "dadd1598a330905db98c2359ffeb2fe1ece12647e0702ce2262ecc7794ac919e",
+  "provenance": "Four unedited summary files extracted from video-checkpoint-c548c522-c548c523-20261008.tar.gz. Archive and complete per-frame logs are not included."
+}

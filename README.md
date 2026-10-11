@@ -1,5 +1,12 @@
 # ShenLink v1 — release candidate
 
+## Test reports
+
+[Detailed lab results and SRT Broadcast comparison](reports/README.md), with a
+[PDF report](reports/ShenLink-test-report.pdf), [raw JSON evidence](reports/raw/)
+and [per-repetition results](reports/capacity-results.csv). These are historical
+measurements of the recorded implementation, not a new benchmark of this release.
+
 Independent source project extracted from the verified Linux implementation.
 Install with `python -m pip install .`. The distribution name is `ShenLink`.
 Canonical public APIs:

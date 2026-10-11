@@ -1,0 +1,423 @@
+{
+  "run_id": "c548c522",
+  "status": "EXPLORATORY_COMPLETED",
+  "cleanup_status": "PASS",
+  "sdk_api": "endpoints",
+  "primary_goal": "Lower time-weighted lag behind newest capture, including silence; dropped old frames are not failures",
+  "references": "Native SRT1.5.3 Broadcast fixed720p1800kbps, buffer120ms, peer-idle60s",
+  "freshness_results": [
+    {
+      "candidate": "adaptive-frame-rate-first",
+      "status": "VALID",
+      "phases": [
+        {
+          "name": "initial",
+          "latest_capture_lag_time_mean_ms": 27.139464366884912,
+          "latest_capture_lag_time_p95_ms": 38.370613,
+          "latest_capture_lag_max_ms": 100.203088,
+          "captured_frames_behind_time_mean": 0.8121409530336363,
+          "captured_frames_behind_max": 3,
+          "time_within_one_captured_frame_percent": 95.23340784177944,
+          "scope": "Newest captured source versus freshest application-decoded frame, time weighted; silence included",
+          "decoded_frame_age_p95_ms": 31.287375,
+          "aoi_time_mean_ms": 43.84074687356548,
+          "aoi_max_ms": 105.697143,
+          "fresh_gap_max_ms": 85.502648
+        },
+        {
+          "name": "degraded_a",
+          "latest_capture_lag_time_mean_ms": 33.15241523080378,
+          "latest_capture_lag_time_p95_ms": 66.740992,
+          "latest_capture_lag_max_ms": 99.239768,
+          "captured_frames_behind_time_mean": 0.9938185347717097,
+          "captured_frames_behind_max": 3,
+          "time_within_one_captured_frame_percent": 88.48942679628168,
+          "scope": "Newest captured source versus freshest application-decoded frame, time weighted; silence included",
+          "decoded_frame_age_p95_ms": 32.993476,
+          "aoi_time_mean_ms": 49.87709595108594,
+          "aoi_max_ms": 107.588211,
+          "fresh_gap_max_ms": 71.819359
+        },
+        {
+          "name": "all_restored",
+          "latest_capture_lag_time_mean_ms": 40.56676134227578,
+          "latest_capture_lag_time_p95_ms": 67.072786,
+          "latest_capture_lag_max_ms": 133.406662,
+          "captured_frames_behind_time_mean": 1.2160240632329142,
+          "captured_frames_behind_max": 4,
+          "time_within_one_captured_frame_percent": 75.24264299935095,
+          "scope": "Newest captured source versus freshest application-decoded frame, time weighted; silence included",
+          "decoded_frame_age_p95_ms": 53.625045,
+          "aoi_time_mean_ms": 57.278126140969285,
+          "aoi_max_ms": 134.758711,
+          "fresh_gap_max_ms": 81.705071
+        }
+      ],
+      "pair": 1,
+      "repetition": 1
+    },
+    {
+      "candidate": "srt-high",
+      "status": "VALID",
+      "phases": [
+        {
+          "name": "initial",
+          "latest_capture_lag_time_mean_ms": 154.52057790408907,
+          "latest_capture_lag_time_p95_ms": 166.698107,
+          "latest_capture_lag_max_ms": 167.499842,
+          "captured_frames_behind_time_mean": 4.635649764894178,
+          "captured_frames_behind_max": 5,
+          "time_within_one_captured_frame_percent": 0.0,
+          "scope": "Newest captured source versus freshest application-decoded frame, time weighted; silence included",
+          "decoded_frame_age_p95_ms": 159.456141,
+          "aoi_time_mean_ms": 171.18027724222304,
+          "aoi_max_ms": 194.24271,
+          "fresh_gap_max_ms": 42.727389
+        },
+        {
+          "name": "degraded_a",
+          "latest_capture_lag_time_mean_ms": 158.39198075382075,
+          "latest_capture_lag_time_p95_ms": 199.997647,
+          "latest_capture_lag_max_ms": 300.040491,
+          "captured_frames_behind_time_mean": 4.751725976332894,
+          "captured_frames_behind_max": 9,
+          "time_within_one_captured_frame_percent": 0.0,
+          "scope": "Newest captured source versus freshest application-decoded frame, time weighted; silence included",
+          "decoded_frame_age_p95_ms": 159.225213,
+          "aoi_time_mean_ms": 175.0531219538644,
+          "aoi_max_ms": 320.45983,
+          "fresh_gap_max_ms": 160.947244
+        },
+        {
+          "name": "all_restored",
+          "latest_capture_lag_time_mean_ms": 177.39719582654402,
+          "latest_capture_lag_time_p95_ms": 366.382774,
+          "latest_capture_lag_max_ms": 666.380677,
+          "captured_frames_behind_time_mean": 5.322450119503514,
+          "captured_frames_behind_max": 20,
+          "time_within_one_captured_frame_percent": 0.0,
+          "scope": "Newest captured source versus freshest application-decoded frame, time weighted; silence included",
+          "decoded_frame_age_p95_ms": 160.341843,
+          "aoi_time_mean_ms": 194.05248596858033,
+          "aoi_max_ms": 690.381994,
+          "fresh_gap_max_ms": 427.378288
+        }
+      ],
+      "pair": 1,
+      "repetition": 1
+    },
+    {
+      "candidate": "adaptive-quality-first",
+      "status": "VALID",
+      "phases": [
+        {
+          "name": "initial",
+          "latest_capture_lag_time_mean_ms": 39.56403098296864,
+          "latest_capture_lag_time_p95_ms": 66.86557,
+          "latest_capture_lag_max_ms": 110.762289,
+          "captured_frames_behind_time_mean": 1.1855053249346525,
+          "captured_frames_behind_max": 3,
+          "time_within_one_captured_frame_percent": 77.03354537197752,
+          "scope": "Newest captured source versus freshest application-decoded frame, time weighted; silence included",
+          "decoded_frame_age_p95_ms": 40.320829,
+          "aoi_time_mean_ms": 56.27354280865554,
+          "aoi_max_ms": 119.521989,
+          "fresh_gap_max_ms": 82.693849
+        },
+        {
+          "name": "degraded_a",
+          "latest_capture_lag_time_mean_ms": 43.5915480680426,
+          "latest_capture_lag_time_p95_ms": 68.026385,
+          "latest_capture_lag_max_ms": 107.289151,
+          "captured_frames_behind_time_mean": 1.3120993335228088,
+          "captured_frames_behind_max": 3,
+          "time_within_one_captured_frame_percent": 66.75803760948133,
+          "scope": "Newest captured source versus freshest application-decoded frame, time weighted; silence included",
+          "decoded_frame_age_p95_ms": 53.04888,
+          "aoi_time_mean_ms": 60.320875955942164,
+          "aoi_max_ms": 129.162825,
+          "fresh_gap_max_ms": 79.579967
+        },
+        {
+          "name": "all_restored",
+          "latest_capture_lag_time_mean_ms": 45.49051314596269,
+          "latest_capture_lag_time_p95_ms": 68.563825,
+          "latest_capture_lag_max_ms": 106.406012,
+          "captured_frames_behind_time_mean": 1.3635444577700102,
+          "captured_frames_behind_max": 3,
+          "time_within_one_captured_frame_percent": 60.067753205277455,
+          "scope": "Newest captured source versus freshest application-decoded frame, time weighted; silence included",
+          "decoded_frame_age_p95_ms": 55.129478,
+          "aoi_time_mean_ms": 62.18331567141781,
+          "aoi_max_ms": 124.649999,
+          "fresh_gap_max_ms": 80.846205
+        }
+      ],
+      "pair": 2,
+      "repetition": 1
+    },
+    {
+      "candidate": "adaptive-fixed",
+      "status": "VALID",
+      "phases": [
+        {
+          "name": "initial",
+          "latest_capture_lag_time_mean_ms": 32.91136474979722,
+          "latest_capture_lag_time_p95_ms": 65.84581,
+          "latest_capture_lag_max_ms": 100.20751,
+          "captured_frames_behind_time_mean": 0.9851479264122036,
+          "captured_frames_behind_max": 3,
+          "time_within_one_captured_frame_percent": 93.76778069018573,
+          "scope": "Newest captured source versus freshest application-decoded frame, time weighted; silence included",
+          "decoded_frame_age_p95_ms": 39.883808,
+          "aoi_time_mean_ms": 49.62968321603155,
+          "aoi_max_ms": 115.83699,
+          "fresh_gap_max_ms": 82.589504
+        },
+        {
+          "name": "degraded_a",
+          "latest_capture_lag_time_mean_ms": 40.9393307441652,
+          "latest_capture_lag_time_p95_ms": 67.086559,
+          "latest_capture_lag_max_ms": 100.799547,
+          "captured_frames_behind_time_mean": 1.227844069652867,
+          "captured_frames_behind_max": 3,
+          "time_within_one_captured_frame_percent": 73.03065393748156,
+          "scope": "Newest captured source versus freshest application-decoded frame, time weighted; silence included",
+          "decoded_frame_age_p95_ms": 56.434944,
+          "aoi_time_mean_ms": 57.655883235244815,
+          "aoi_max_ms": 125.0014,
+          "fresh_gap_max_ms": 78.492081
+        },
+        {
+          "name": "all_restored",
+          "latest_capture_lag_time_mean_ms": 54.49458574293069,
+          "latest_capture_lag_time_p95_ms": 67.433755,
+          "latest_capture_lag_max_ms": 100.879547,
+          "captured_frames_behind_time_mean": 1.6354389282208879,
+          "captured_frames_behind_max": 3,
+          "time_within_one_captured_frame_percent": 38.566755947052506,
+          "scope": "Newest captured source versus freshest application-decoded frame, time weighted; silence included",
+          "decoded_frame_age_p95_ms": 59.431372,
+          "aoi_time_mean_ms": 71.1673554385319,
+          "aoi_max_ms": 128.69213,
+          "fresh_gap_max_ms": 74.085638
+        }
+      ],
+      "pair": 2,
+      "repetition": 1
+    },
+    {
+      "candidate": "adaptive-fixed",
+      "status": "VALID",
+      "phases": [
+        {
+          "name": "initial",
+          "latest_capture_lag_time_mean_ms": 34.81990170794394,
+          "latest_capture_lag_time_p95_ms": 66.740096,
+          "latest_capture_lag_max_ms": 100.333856,
+          "captured_frames_behind_time_mean": 1.0423244760053971,
+          "captured_frames_behind_max": 3,
+          "time_within_one_captured_frame_percent": 89.54016332519127,
+          "scope": "Newest captured source versus freshest application-decoded frame, time weighted; silence included",
+          "decoded_frame_age_p95_ms": 45.987597,
+          "aoi_time_mean_ms": 51.51759513103954,
+          "aoi_max_ms": 112.392625,
+          "fresh_gap_max_ms": 84.572977
+        },
+        {
+          "name": "degraded_a",
+          "latest_capture_lag_time_mean_ms": 35.90078050968255,
+          "latest_capture_lag_time_p95_ms": 66.829548,
+          "latest_capture_lag_max_ms": 108.842917,
+          "captured_frames_behind_time_mean": 1.0772180767704154,
+          "captured_frames_behind_max": 3,
+          "time_within_one_captured_frame_percent": 84.98684245465583,
+          "scope": "Newest captured source versus freshest application-decoded frame, time weighted; silence included",
+          "decoded_frame_age_p95_ms": 54.562921,
+          "aoi_time_mean_ms": 52.62037420677469,
+          "aoi_max_ms": 128.727097,
+          "fresh_gap_max_ms": 79.725891
+        },
+        {
+          "name": "all_restored",
+          "latest_capture_lag_time_mean_ms": 52.64885537675865,
+          "latest_capture_lag_time_p95_ms": 67.443826,
+          "latest_capture_lag_max_ms": 100.117752,
+          "captured_frames_behind_time_mean": 1.579759813351209,
+          "captured_frames_behind_max": 3,
+          "time_within_one_captured_frame_percent": 43.770533173556764,
+          "scope": "Newest captured source versus freshest application-decoded frame, time weighted; silence included",
+          "decoded_frame_age_p95_ms": 58.975057,
+          "aoi_time_mean_ms": 69.33250835867807,
+          "aoi_max_ms": 129.890423,
+          "fresh_gap_max_ms": 102.529458
+        }
+      ],
+      "pair": 3,
+      "repetition": 2
+    },
+    {
+      "candidate": "adaptive-quality-first",
+      "status": "VALID",
+      "phases": [
+        {
+          "name": "initial",
+          "latest_capture_lag_time_mean_ms": 39.56944936854393,
+          "latest_capture_lag_time_p95_ms": 66.872761,
+          "latest_capture_lag_max_ms": 111.985911,
+          "captured_frames_behind_time_mean": 1.1857279237720932,
+          "captured_frames_behind_max": 3,
+          "time_within_one_captured_frame_percent": 77.22510564936759,
+          "scope": "Newest captured source versus freshest application-decoded frame, time weighted; silence included",
+          "decoded_frame_age_p95_ms": 40.496933,
+          "aoi_time_mean_ms": 56.31109292147614,
+          "aoi_max_ms": 112.616554,
+          "fresh_gap_max_ms": 82.379845
+        },
+        {
+          "name": "degraded_a",
+          "latest_capture_lag_time_mean_ms": 45.050256488148094,
+          "latest_capture_lag_time_p95_ms": 67.769692,
+          "latest_capture_lag_max_ms": 101.934313,
+          "captured_frames_behind_time_mean": 1.3525540230888689,
+          "captured_frames_behind_max": 3,
+          "time_within_one_captured_frame_percent": 64.1750744225196,
+          "scope": "Newest captured source versus freshest application-decoded frame, time weighted; silence included",
+          "decoded_frame_age_p95_ms": 57.18785,
+          "aoi_time_mean_ms": 61.77241315877867,
+          "aoi_max_ms": 127.167065,
+          "fresh_gap_max_ms": 82.627311
+        },
+        {
+          "name": "all_restored",
+          "latest_capture_lag_time_mean_ms": 52.491587305268986,
+          "latest_capture_lag_time_p95_ms": 71.567077,
+          "latest_capture_lag_max_ms": 131.218557,
+          "captured_frames_behind_time_mean": 1.5728434950272367,
+          "captured_frames_behind_max": 4,
+          "time_within_one_captured_frame_percent": 46.58125065037594,
+          "scope": "Newest captured source versus freshest application-decoded frame, time weighted; silence included",
+          "decoded_frame_age_p95_ms": 56.783867,
+          "aoi_time_mean_ms": 69.17793589866271,
+          "aoi_max_ms": 134.876517,
+          "fresh_gap_max_ms": 83.137657
+        }
+      ],
+      "pair": 3,
+      "repetition": 2
+    },
+    {
+      "candidate": "srt-high",
+      "status": "VALID",
+      "phases": [
+        {
+          "name": "initial",
+          "latest_capture_lag_time_mean_ms": 154.91889627291937,
+          "latest_capture_lag_time_p95_ms": 166.69781,
+          "latest_capture_lag_max_ms": 167.366795,
+          "captured_frames_behind_time_mean": 4.6475809200987666,
+          "captured_frames_behind_max": 5,
+          "time_within_one_captured_frame_percent": 0.0,
+          "scope": "Newest captured source versus freshest application-decoded frame, time weighted; silence included",
+          "decoded_frame_age_p95_ms": 158.642933,
+          "aoi_time_mean_ms": 171.60406623817505,
+          "aoi_max_ms": 194.904559,
+          "fresh_gap_max_ms": 41.301988
+        },
+        {
+          "name": "degraded_a",
+          "latest_capture_lag_time_mean_ms": 158.7263224832486,
+          "latest_capture_lag_time_p95_ms": 199.964798,
+          "latest_capture_lag_max_ms": 299.957077,
+          "captured_frames_behind_time_mean": 4.76189232008844,
+          "captured_frames_behind_max": 9,
+          "time_within_one_captured_frame_percent": 0.0,
+          "scope": "Newest captured source versus freshest application-decoded frame, time weighted; silence included",
+          "decoded_frame_age_p95_ms": 160.500901,
+          "aoi_time_mean_ms": 175.39794168195007,
+          "aoi_max_ms": 319.950718,
+          "fresh_gap_max_ms": 140.231445
+        },
+        {
+          "name": "all_restored",
+          "latest_capture_lag_time_mean_ms": 1409.5897292664665,
+          "latest_capture_lag_time_p95_ms": 3733.287736,
+          "latest_capture_lag_max_ms": 4033.262397,
+          "captured_frames_behind_time_mean": 42.28854039979101,
+          "captured_frames_behind_max": 121,
+          "time_within_one_captured_frame_percent": 0.0,
+          "scope": "Newest captured source versus freshest application-decoded frame, time weighted; silence included",
+          "decoded_frame_age_p95_ms": 161.520431,
+          "aoi_time_mean_ms": 1426.271967382036,
+          "aoi_max_ms": 4063.701143,
+          "fresh_gap_max_ms": 3910.345754
+        }
+      ],
+      "pair": 4,
+      "repetition": 2
+    },
+    {
+      "candidate": "adaptive-frame-rate-first",
+      "status": "VALID",
+      "phases": [
+        {
+          "name": "initial",
+          "latest_capture_lag_time_mean_ms": 27.46419396520214,
+          "latest_capture_lag_time_p95_ms": 37.840172,
+          "latest_capture_lag_max_ms": 82.069512,
+          "captured_frames_behind_time_mean": 0.8221992070467193,
+          "captured_frames_behind_max": 2,
+          "time_within_one_captured_frame_percent": 95.28904385498379,
+          "scope": "Newest captured source versus freshest application-decoded frame, time weighted; silence included",
+          "decoded_frame_age_p95_ms": 32.063599,
+          "aoi_time_mean_ms": 44.18070610738313,
+          "aoi_max_ms": 100.734549,
+          "fresh_gap_max_ms": 81.498862
+        },
+        {
+          "name": "degraded_a",
+          "latest_capture_lag_time_mean_ms": 33.91213082914079,
+          "latest_capture_lag_time_p95_ms": 66.74372,
+          "latest_capture_lag_max_ms": 102.504768,
+          "captured_frames_behind_time_mean": 1.0151399567667165,
+          "captured_frames_behind_max": 3,
+          "time_within_one_captured_frame_percent": 87.77279158461847,
+          "scope": "Newest captured source versus freshest application-decoded frame, time weighted; silence included",
+          "decoded_frame_age_p95_ms": 38.283409,
+          "aoi_time_mean_ms": 50.60788672060122,
+          "aoi_max_ms": 119.812263,
+          "fresh_gap_max_ms": 76.81365
+        },
+        {
+          "name": "all_restored",
+          "latest_capture_lag_time_mean_ms": 52.145066003896275,
+          "latest_capture_lag_time_p95_ms": 68.19135,
+          "latest_capture_lag_max_ms": 100.213616,
+          "captured_frames_behind_time_mean": 1.5617152306846391,
+          "captured_frames_behind_max": 3,
+          "time_within_one_captured_frame_percent": 45.68977830502996,
+          "scope": "Newest captured source versus freshest application-decoded frame, time weighted; silence included",
+          "decoded_frame_age_p95_ms": 58.895917,
+          "aoi_time_mean_ms": 68.83164732897897,
+          "aoi_max_ms": 131.874772,
+          "fresh_gap_max_ms": 89.275839
+        }
+      ],
+      "pair": 4,
+      "repetition": 2
+    }
+  ],
+  "limitations": [
+    "Controlled pilot, not statistical superiority or physical-radio validation",
+    "Three steps generated inside developer bounds; benchmark keeps previous profiles; protocol/security/priority unchanged",
+    "Shaping caps are settings, not independently rerun capacity calibration",
+    "Two adaptive encoders/decoders versus one each for fixed SRT references",
+    "Light timing and full image-fidelity runs are separate; do not pool CPU/timing",
+    "Low-path delays are not a bandwidth oracle; high promotion tests actual receiver delivery",
+    "High selection may change before a fault; report observed route rather than claim a switch",
+    "Synthetic source to decoded availability, not glass-to-glass; sampled blockSSIM not VMAF",
+    "Different resolution policies; no equal-image-quality claim",
+    "SRT120ms is this reference configuration, not fastest possible SRT; no universal transport superiority claim",
+    "Two balanced repetitions are a short repeatability check, not a statistical significance test"
+  ]
+}
